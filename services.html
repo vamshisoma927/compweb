@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coreshift Technologies DevOps Services - CI/CD, Cloud Infrastructure, Kubernetes, Monitoring, Security, and Infrastructure as Code solutions.">
+  <title>Services | Coreshift Technologies - DevOps Solutions</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-icon.svg" alt="Coreshift" class="logo-img">
+        <span>Coreshift Technologies</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="current">Services</span>
+      </div>
+      <h1>Our DevOps Services</h1>
+      <p>Comprehensive solutions to accelerate your software delivery and optimize infrastructure operations.</p>
+    </div>
+  </header>
+
+  <!-- Services Detail Section -->
+  <section class="services-detail">
+    <div class="container">
+      
+      <!-- CI/CD Pipelines -->
+      <div class="service-detail-card fade-in" id="cicd">
+        <div class="service-detail-content">
+          <h3>⚙️ CI/CD Pipelines</h3>
+          <p>
+            Streamline your development workflow with fully automated build, test, and deployment pipelines. 
+            We design robust CI/CD systems that reduce deployment time from days to minutes while ensuring 
+            code quality through comprehensive testing and validation.
+          </p>
+          <ul class="service-features-list">
+            <li>Automated build and test pipelines</li>
+            <li>Blue-green and canary deployments</li>
+            <li>GitOps workflow implementation</li>
+            <li>Multi-environment management</li>
+            <li>Rollback and recovery strategies</li>
+            <li>Integration with existing tools</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="service-detail-visual">
+          <div class="terminal" style="width: 100%;">
+            <div class="terminal-header">
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <span class="terminal-title">ci-pipeline.yml</span>
+            </div>
+            <div class="terminal-body" style="min-height: auto;">
+              <pre style="color: var(--text-secondary); font-size: 0.8rem; margin: 0;">
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - docker build -t app:$CI_COMMIT_SHA .
+    
+test:
+  stage: test
+  script:
+    - npm run test:coverage
+    
+deploy:
+  stage: deploy
+  script:
+    - kubectl apply -f k8s/</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Infrastructure -->
+      <div class="service-detail-card fade-in" id="cloud">
+        <div class="service-detail-content">
+          <h3>☁️ Cloud Infrastructure</h3>
+          <p>
+            Design and implement scalable, secure, and cost-effective cloud architectures across AWS, Azure, 
+            and Google Cloud Platform. We help you leverage the full potential of cloud computing while 
+            optimizing costs and ensuring compliance.
+          </p>
+          <ul class="service-features-list">
+            <li>Multi-cloud and hybrid cloud strategies</li>
+            <li>Cloud migration and modernization</li>
+            <li>Auto-scaling and load balancing</li>
+            <li>Cost optimization and FinOps</li>
+            <li>Disaster recovery planning</li>
+            <li>Cloud-native architecture design</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="service-detail-visual">
+          <div style="text-align: center;">
+            <div style="font-size: 5rem; margin-bottom: 20px;">☁️</div>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+              <span style="padding: 8px 16px; background: var(--bg-secondary); border-radius: 20px; font-size: 0.9rem; color: var(--text-secondary);">AWS</span>
+              <span style="padding: 8px 16px; background: var(--bg-secondary); border-radius: 20px; font-size: 0.9rem; color: var(--text-secondary);">Azure</span>
+              <span style="padding: 8px 16px; background: var(--bg-secondary); border-radius: 20px; font-size: 0.9rem; color: var(--text-secondary);">GCP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kubernetes -->
+      <div class="service-detail-card fade-in" id="kubernetes">
+        <div class="service-detail-content">
+          <h3>🐳 Kubernetes & Containers</h3>
+          <p>
+            Harness the power of container orchestration with Kubernetes. We design, deploy, and manage 
+            containerized applications at scale, enabling microservices architectures that are resilient, 
+            scalable, and easy to maintain.
+          </p>
+          <ul class="service-features-list">
+            <li>Kubernetes cluster setup and management</li>
+            <li>Container strategy and Docker optimization</li>
+            <li>Service mesh implementation (Istio, Linkerd)</li>
+            <li>Helm chart development</li>
+            <li>Multi-cluster management</li>
+            <li>Kubernetes security hardening</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="service-detail-visual">
+          <div class="terminal" style="width: 100%;">
+            <div class="terminal-header">
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <span class="terminal-title">kubectl</span>
+            </div>
+            <div class="terminal-body" style="min-height: auto;">
+              <pre style="color: var(--text-secondary); font-size: 0.8rem; margin: 0;">
+$ kubectl get pods -n production
+NAME                     READY   STATUS
+api-6f9d7c8b5-x2k9j     1/1     Running
+api-6f9d7c8b5-m4n8p     1/1     Running
+web-3d4e5f6g7-h8i9j     1/1     Running
+db-stateful-0           1/1     Running
+
+$ kubectl get services
+NAME    TYPE          EXTERNAL-IP
+api     LoadBalancer  34.102.x.x
+web     ClusterIP     10.0.0.5</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monitoring -->
+      <div class="service-detail-card fade-in" id="monitoring">
+        <div class="service-detail-content">
+          <h3>📊 Monitoring & Observability</h3>
+          <p>
+            Gain complete visibility into your systems with comprehensive monitoring and observability solutions. 
+            We implement metrics, logging, and tracing that provide actionable insights and enable proactive 
+            issue resolution.
+          </p>
+          <ul class="service-features-list">
+            <li>Prometheus & Grafana dashboards</li>
+            <li>Centralized logging (ELK, Loki)</li>
+            <li>Distributed tracing (Jaeger, Zipkin)</li>
+            <li>Custom alerting and on-call setup</li>
+            <li>SLI/SLO definition and tracking</li>
+            <li>APM integration and optimization</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="service-detail-visual">
+          <div style="text-align: center; width: 100%;">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+              <div style="background: var(--bg-secondary); padding: 20px; border-radius: 12px;">
+                <div style="font-size: 2rem; color: var(--accent-primary);">99.9%</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Uptime</div>
+              </div>
+              <div style="background: var(--bg-secondary); padding: 20px; border-radius: 12px;">
+                <div style="font-size: 2rem; color: var(--accent-primary);">45ms</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Avg Response</div>
+              </div>
+              <div style="background: var(--bg-secondary); padding: 20px; border-radius: 12px;">
+                <div style="font-size: 2rem; color: var(--accent-primary);">2.1M</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Requests/min</div>
+              </div>
+              <div style="background: var(--bg-secondary); padding: 20px; border-radius: 12px;">
+                <div style="font-size: 2rem; color: var(--accent-primary);">0</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Critical Alerts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div class="service-detail-card fade-in" id="security">
+        <div class="service-detail-content">
+          <h3>🔒 Security & Compliance</h3>
+          <p>
+            Embed security at every stage of your development lifecycle with DevSecOps practices. 
+            We help you build secure systems that meet compliance requirements while maintaining 
+            development velocity.
+          </p>
+          <ul class="service-features-list">
+            <li>Security scanning in CI/CD pipelines</li>
+            <li>Container and image vulnerability scanning</li>
+            <li>Secrets management (Vault, AWS Secrets)</li>
+            <li>Network security and zero-trust architecture</li>
+            <li>Compliance automation (SOC2, HIPAA, PCI-DSS)</li>
+            <li>Security incident response planning</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="service-detail-visual">
+          <div style="text-align: center;">
+            <div style="font-size: 5rem; margin-bottom: 20px;">🔒</div>
+            <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
+              <span style="padding: 8px 16px; background: rgba(39, 202, 64, 0.2); border: 1px solid #27ca40; border-radius: 20px; font-size: 0.85rem; color: #27ca40;">✓ SOC 2 Compliant</span>
+              <span style="padding: 8px 16px; background: rgba(39, 202, 64, 0.2); border: 1px solid #27ca40; border-radius: 20px; font-size: 0.85rem; color: #27ca40;">✓ HIPAA Ready</span>
+              <span style="padding: 8px 16px; background: rgba(39, 202, 64, 0.2); border: 1px solid #27ca40; border-radius: 20px; font-size: 0.85rem; color: #27ca40;">✓ PCI-DSS Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure as Code -->
+      <div class="service-detail-card fade-in" id="iac">
+        <div class="service-detail-content">
+          <h3>🏗️ Infrastructure as Code</h3>
+          <p>
+            Define, provision, and manage your infrastructure through code with tools like Terraform, 
+            Ansible, and Pulumi. We enable version-controlled, reproducible infrastructure that 
+            reduces errors and accelerates deployments.
+          </p>
+          <ul class="service-features-list">
+            <li>Terraform module development</li>
+            <li>Ansible playbook creation</li>
+            <li>Pulumi and CDK implementations</li>
+            <li>State management and best practices</li>
+            <li>Infrastructure testing and validation</li>
+            <li>GitOps for infrastructure management</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="service-detail-visual">
+          <div class="terminal" style="width: 100%;">
+            <div class="terminal-header">
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <span class="terminal-title">main.tf</span>
+            </div>
+            <div class="terminal-body" style="min-height: auto;">
+              <pre style="color: var(--text-secondary); font-size: 0.8rem; margin: 0;">
+resource "aws_eks_cluster" "main" {
+  name     = "production-cluster"
+  role_arn = aws_iam_role.eks.arn
+  version  = "1.28"
+
+  vpc_config {
+    subnet_ids = var.subnet_ids
+    endpoint_private_access = true
+  }
+
+  tags = {
+    Environment = "production"
+    ManagedBy   = "terraform"
+  }
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box scale-in">
+        <h2>Need a Custom Solution?</h2>
+        <p>Every organization is unique. Let's discuss your specific requirements and build a tailored DevOps strategy.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">
+            Schedule Consultation
+            <span class="btn-icon">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo-icon.svg" alt="Coreshift" class="logo-img">
+            <span>Coreshift Technologies</span>
+          </a>
+          <p>Transforming businesses through DevOps excellence. Your infrastructure, our expertise.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#cicd">CI/CD Pipelines</a></li>
+            <li><a href="services.html#cloud">Cloud Infrastructure</a></li>
+            <li><a href="services.html#kubernetes">Kubernetes</a></li>
+            <li><a href="services.html#monitoring">Monitoring</a></li>
+            <li><a href="services.html#security">Security</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Location</h4>
+          <ul>
+            <li><span style="color: var(--text-secondary);">Calgary, Canada</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Coreshift Technologies Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

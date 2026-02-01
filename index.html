@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coreshift Technologies - Your trusted DevOps partner in Calgary, Canada. We automate, scale, and deliver world-class infrastructure solutions.">
+  <title>Coreshift Technologies | Automate. Scale. Deliver.</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-icon.svg" alt="Coreshift" class="logo-img">
+        <span>Coreshift Technologies</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>
+          <span>Automate.</span><br>
+          <span>Scale.</span> <span>Deliver.</span>
+        </h1>
+        
+        <p class="hero-description">
+          We transform your infrastructure with cutting-edge DevOps practices. From CI/CD pipelines to cloud architecture, we build systems that scale.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary">
+            Get Started
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="services.html" class="btn btn-secondary">
+            Explore Services
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-terminal">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <span class="terminal-title">coreshift@devops:~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command">coreshift deploy --env production</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">⚡ Initializing deployment pipeline...</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">📦 Building containers...</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">🔄 Running health checks...</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output terminal-success">✓ Deployment successful!</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">What We Do</span>
+        <h2>DevOps Services That Drive Results</h2>
+        <p>End-to-end solutions designed to accelerate your development lifecycle and maximize operational efficiency.</p>
+      </div>
+      
+      <div class="services-grid stagger-children">
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>CI/CD Pipelines</h3>
+          <p>Automated build, test, and deployment pipelines that ship code faster with zero downtime.</p>
+          <a href="services.html#cicd" class="service-link">
+            Learn More <span>→</span>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud Infrastructure</h3>
+          <p>Scalable, secure cloud architecture on AWS, Azure, and GCP designed for performance.</p>
+          <a href="services.html#cloud" class="service-link">
+            Learn More <span>→</span>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">🐳</div>
+          <h3>Kubernetes & Containers</h3>
+          <p>Container orchestration and microservices architecture that scales with your growth.</p>
+          <a href="services.html#kubernetes" class="service-link">
+            Learn More <span>→</span>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Monitoring & Observability</h3>
+          <p>Real-time insights into your infrastructure with comprehensive logging and alerting.</p>
+          <a href="services.html#monitoring" class="service-link">
+            Learn More <span>→</span>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">🔒</div>
+          <h3>Security & Compliance</h3>
+          <p>DevSecOps practices that embed security at every stage of the development lifecycle.</p>
+          <a href="services.html#security" class="service-link">
+            Learn More <span>→</span>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform, Ansible, and Pulumi solutions for reproducible, version-controlled infrastructure.</p>
+          <a href="services.html#iac" class="service-link">
+            Learn More <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image fade-in-left">
+        <div class="about-image-main">
+          <img src="images/devops-illustration.svg" alt="DevOps - Development and Operations" style="width: 100%; border-radius: 16px;">
+        </div>
+      </div>
+      
+      <div class="about-content fade-in-right">
+        <span class="section-label">About Coreshift</span>
+        <h2>Engineering Excellence Meets DevOps Innovation</h2>
+        <p>
+          Coreshift Technologies Inc is a Calgary-based DevOps consultancy dedicated to helping organizations modernize their infrastructure. We partner with businesses to transform software delivery, enabling teams to ship faster, more reliably, and with confidence.
+        </p>
+        
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span>Cloud-Agnostic Solutions</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span>Certified Engineers</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span>Agile Methodology</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span>Modern Best Practices</span>
+          </div>
+        </div>
+        
+        <a href="about.html" class="btn btn-primary">
+          Learn Our Story
+          <span class="btn-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Our Tech Stack</span>
+        <h2>Tools We Master</h2>
+        <p>Industry-leading technologies and platforms we leverage to deliver exceptional results.</p>
+      </div>
+    </div>
+    
+    <div class="tech-marquee-wrapper">
+      <div class="tech-marquee">
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40" height="40">
+          </div>
+          <span>Docker</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40">
+          </div>
+          <span>Kubernetes</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" width="40" height="40">
+          </div>
+          <span>AWS</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="40" height="40">
+          </div>
+          <span>Azure</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" width="40" height="40">
+          </div>
+          <span>GCP</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" width="40" height="40">
+          </div>
+          <span>Terraform</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible" width="40" height="40">
+          </div>
+          <span>Ansible</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" width="40" height="40">
+          </div>
+          <span>GitLab</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="40" height="40" style="filter: invert(1);">
+          </div>
+          <span>GitHub</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="40" height="40">
+          </div>
+          <span>Jenkins</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" width="40" height="40">
+          </div>
+          <span>Prometheus</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" width="40" height="40">
+          </div>
+          <span>Grafana</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40" height="40">
+          </div>
+          <span>Docker</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40">
+          </div>
+          <span>Kubernetes</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" width="40" height="40">
+          </div>
+          <span>AWS</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="40" height="40">
+          </div>
+          <span>Azure</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" width="40" height="40">
+          </div>
+          <span>GCP</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" width="40" height="40">
+          </div>
+          <span>Terraform</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible" width="40" height="40">
+          </div>
+          <span>Ansible</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" width="40" height="40">
+          </div>
+          <span>GitLab</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="40" height="40" style="filter: invert(1);">
+          </div>
+          <span>GitHub</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="40" height="40">
+          </div>
+          <span>Jenkins</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" width="40" height="40">
+          </div>
+          <span>Prometheus</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-item-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" width="40" height="40">
+          </div>
+          <span>Grafana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box scale-in">
+        <h2>Ready to Transform Your Infrastructure?</h2>
+        <p>Let's discuss how we can accelerate your DevOps journey and build systems that scale with your ambitions.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">
+            Schedule a Call
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="services.html" class="btn btn-secondary">
+            View All Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo-icon.svg" alt="Coreshift" class="logo-img">
+            <span>Coreshift Technologies</span>
+          </a>
+          <p>Transforming businesses through DevOps excellence. Your infrastructure, our expertise.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#cicd">CI/CD Pipelines</a></li>
+            <li><a href="services.html#cloud">Cloud Infrastructure</a></li>
+            <li><a href="services.html#kubernetes">Kubernetes</a></li>
+            <li><a href="services.html#monitoring">Monitoring</a></li>
+            <li><a href="services.html#security">Security</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Location</h4>
+          <ul>
+            <li><span style="color: var(--text-secondary);">Calgary, Canada</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Coreshift Technologies Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
