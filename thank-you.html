@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for contacting Coreshift Technologies. We'll be in touch soon.">
+  <title>Thank You | Coreshift Technologies</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg">
+  
+  <style>
+    .thank-you-section {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    
+    .thank-you-content {
+      max-width: 600px;
+    }
+    
+    .thank-you-icon {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      font-size: 56px;
+      animation: scaleIn 0.5s ease-out, pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 0 20px rgba(0, 212, 255, 0);
+      }
+    }
+    
+    .thank-you-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--text-primary), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .thank-you-content p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    
+    .thank-you-details {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+    
+    .thank-you-details h3 {
+      font-size: 1rem;
+      color: var(--accent-cyan);
+      margin-bottom: 12px;
+    }
+    
+    .thank-you-details p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    
+    .thank-you-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-icon.svg" alt="Coreshift" class="logo-img">
+        <span>Coreshift Technologies</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Thank You Section -->
+  <section class="thank-you-section">
+    <div class="thank-you-content">
+      <div class="thank-you-icon">✓</div>
+      <h1>Message Received!</h1>
+      <p>Thank you for reaching out to Coreshift Technologies. We've received your message and appreciate your interest in our DevOps solutions.</p>
+      
+      <div class="thank-you-details">
+        <h3>What happens next?</h3>
+        <p>Our team will review your inquiry and get back to you within 24-48 hours. We're excited to learn more about your project!</p>
+      </div>
+      
+      <div class="thank-you-actions">
+        <a href="index.html" class="btn btn-primary">
+          Back to Home
+          <span class="btn-icon">→</span>
+        </a>
+        <a href="services.html" class="btn btn-secondary">
+          Explore Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo-icon.svg" alt="Coreshift" class="logo-img">
+            <span>Coreshift Technologies</span>
+          </a>
+          <p>Transforming businesses through DevOps excellence. Your infrastructure, our expertise.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#cicd">CI/CD Pipelines</a></li>
+            <li><a href="services.html#cloud">Cloud Infrastructure</a></li>
+            <li><a href="services.html#kubernetes">Kubernetes</a></li>
+            <li><a href="services.html#monitoring">Monitoring</a></li>
+            <li><a href="services.html#security">Security</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Location</h4>
+          <ul>
+            <li><span style="color: var(--text-secondary);">Calgary, Canada</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Coreshift Technologies Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

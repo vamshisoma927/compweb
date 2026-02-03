@@ -90,7 +90,16 @@
         
         <div class="contact-form fade-in-right">
           <h3>Send Us a Message</h3>
-          <form action="#" method="POST">
+          <form action="https://formspree.io/f/mgozdgjd" method="POST">
+            <!-- Honeypot field for spam protection -->
+            <input type="text" name="_gotcha" style="display:none">
+            
+            <!-- Custom subject line for emails -->
+            <input type="hidden" name="_subject" value="New Contact from Coreshift Website">
+            
+            <!-- Redirect to thank you page after submission -->
+            <input type="hidden" name="_next" value="https://coreshifttechnologies.ca/thank-you.html">
+            
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name *</label>
