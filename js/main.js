@@ -138,13 +138,7 @@ function initFormHandling() {
   if (!contactForm) return;
   
   contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-    
-    // Basic validation
+    // Basic validation before submitting
     let isValid = true;
     const requiredFields = this.querySelectorAll('[required]');
     
@@ -158,6 +152,7 @@ function initFormHandling() {
     });
     
     if (!isValid) {
+      e.preventDefault();
       showNotification('Please fill in all required fields.', 'error');
       return;
     }
@@ -165,24 +160,18 @@ function initFormHandling() {
     // Email validation
     const emailField = this.querySelector('input[type="email"]');
     if (emailField && !isValidEmail(emailField.value)) {
+      e.preventDefault();
       showNotification('Please enter a valid email address.', 'error');
       emailField.style.borderColor = '#ff5f56';
       return;
     }
     
-    // Simulate form submission
+    // Show sending state (form will submit naturally to Formspree)
     const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
     
-    // Simulate API call
-    setTimeout(() => {
-      showNotification('Thank you! We\'ll get back to you soon.', 'success');
-      this.reset();
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
-    }, 1500);
+    // Form will submit to Formspree and redirect to thank-you page
   });
 }
 
