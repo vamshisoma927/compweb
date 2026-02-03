@@ -257,10 +257,18 @@ p {
   color: var(--bg-primary);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background: var(--text-primary);
+  color: var(--bg-primary);
   transform: translateY(-3px);
   box-shadow: 0 10px 40px var(--accent-glow);
+}
+
+.btn-primary:active {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
