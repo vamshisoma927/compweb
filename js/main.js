@@ -10,7 +10,44 @@ document.addEventListener('DOMContentLoaded', function() {
   initTerminalAnimation();
   initSmoothScroll();
   initFormHandling();
+  initFaqAccordion();
 });
+
+// ==========================================
+// FAQ ACCORDION
+// ==========================================
+function initFaqAccordion() {
+  const items = document.querySelectorAll('.faq-item');
+
+  if (items.length === 0) return;
+
+  items.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+
+    if (!question || !answer) return;
+
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      // Close all items (single-open accordion)
+      items.forEach(other => {
+        other.classList.remove('open');
+        const otherBtn = other.querySelector('.faq-question');
+        const otherAnswer = other.querySelector('.faq-answer');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        if (otherAnswer) otherAnswer.style.maxHeight = null;
+      });
+
+      // Open the clicked item if it wasn't already open
+      if (!isOpen) {
+        item.classList.add('open');
+        question.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+}
 
 // ==========================================
 // NAVBAR
